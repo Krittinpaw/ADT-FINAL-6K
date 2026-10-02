@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/lenovo/Desktop/GRAPHFLOW/GRAPHweek1",
-      "program": "c:/Users/lenovo/Desktop/GRAPHFLOW/GRAPHweek1/build/Debug/outDebug",
+      "cwd": "c:/Users/lenovo/Desktop/GRAPHFLOW/Treefinal",
+      "program": "c:/Users/lenovo/Desktop/GRAPHFLOW/Treefinal/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
