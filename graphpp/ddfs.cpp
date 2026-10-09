@@ -3,25 +3,24 @@
 #define MAX_N 100000
 using namespace std;
 
+int n,m;
+
 vector<int> adj[MAX_N];
 int degree[MAX_N];
+bool visit[MAX_N];
 int pred[MAX_N];
 int d[MAX_N];
 int f[MAX_N];
-int layer[MAX_N];
-bool visit[MAX_N];
-int timecount;
 
-int n,m;
+int timecount;
 
 void init(){
 
     for (int i = 0; i < n; i++)
     {
         adj[i].clear();
-        degree[i] = 0;
         visit[i] = false;
-        layer[i] = -1;
+        degree[i] = 0;
         pred[i] = -1;
         d[i] = -1;
         f[i] = -1;
@@ -33,40 +32,43 @@ void init(){
 
 void dfs_visit(int u){
 
+    
     timecount++;
     visit[u] = true;
     d[u] = timecount;
 
     for (int v : adj[u])
     {
+        
         if (!visit[v])
         {
-            pred[v] = u;
             visit[v] = true;
             dfs_visit(v);
         }
+        
         
     }
 
     timecount++;
     f[u] = timecount;
     
+    
 }
 
 void dfs(int s){
 
-    pred[s] = -1;
+    pred[s] = s;
     dfs_visit(s);
 
-    for (int i = 0; i < n; i++)
+    for (int u = 0; u < n; u++)
     {
-        if (!visit[i])
+        if (!visit[u])
         {
-            visit[i] = true;
-            pred[i] = -1;
-            dfs_visit(i);
+            visit[u] = true;
+            dfs_visit(u);
         }
         
     }
     
 }
+

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/lenovo/Desktop/GRAPHFLOW/Treefinal",
-      "program": "c:/Users/lenovo/Desktop/GRAPHFLOW/Treefinal/build/Debug/outDebug",
+      "cwd": "c:/Users/lenovo/Desktop/GRAPHFLOW/graphpp",
+      "program": "c:/Users/lenovo/Desktop/GRAPHFLOW/graphpp/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
